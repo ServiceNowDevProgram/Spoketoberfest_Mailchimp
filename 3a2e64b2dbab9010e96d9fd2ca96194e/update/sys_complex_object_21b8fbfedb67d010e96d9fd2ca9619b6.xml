@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD6db8fbfe8c67d01043978152cc7678b5</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>3a2e64b2dbab9010e96d9fd2ca96194e</scope_name>
+        <serialized_content>{"FlowDesigner:FD6db8fbfe8c67d01043978152cc7678b5":{},"FlowDesigner:FD6db8fbfe8c67d01043978152cc7678b5.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"d598c91a-a19f-4156-8b66-0f39f6c5301e\",\"default_value\":\"\",\"label\":\"Member details\",\"mandatory\":\"true\",\"uiUniqueId\":\"24219461-4081-453d-b8f2-79e820e25db8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6db8fbfe8c67d01043978152cc7678b5\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"2a621595-882d-45cb-9452-8620b904291b\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 13:59:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21b8fbfedb67d010e96d9fd2ca9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD6db8fbfe8c67d01043978152cc7678b5</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name>sys_complex_object_21b8fbfedb67d010e96d9fd2ca9619b6</sys_update_name>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
