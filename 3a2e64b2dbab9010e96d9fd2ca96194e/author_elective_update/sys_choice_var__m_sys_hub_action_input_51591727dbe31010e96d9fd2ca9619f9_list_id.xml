@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="list_id" table="var__m_sys_hub_action_input_51591727dbe31010e96d9fd2ca9619f9" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>list_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nia McCash</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_51591727dbe31010e96d9fd2ca9619f9</name>
+            <sequence>0</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:37:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19595fa7dbe31010e96d9fd2ca961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:37:39</sys_updated_on>
+            <value>f45e810160</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>list_id</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_51591727dbe31010e96d9fd2ca9619f9</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:37:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91595727dbe31010e96d9fd2ca961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:37:39</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>list_id</element>
+            <name>var__m_sys_hub_action_input_51591727dbe31010e96d9fd2ca9619f9</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:37:39</sys_created_on>
+            <sys_id>5d595fa7dbe31010e96d9fd2ca961954</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:37:39</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

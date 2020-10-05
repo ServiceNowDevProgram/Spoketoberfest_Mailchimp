@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0dc15903d0ebd01079c9d58280703014</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>3a2e64b2dbab9010e96d9fd2ca96194e</scope_name>
+        <serialized_content>{"FlowDesigner:FD0dc15903d0ebd01079c9d58280703014":{},"FlowDesigner:FD0dc15903d0ebd01079c9d58280703014.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"f439d3c6-9c4d-4100-90d1-1a7d6d73886c\",\"default_value\":\"\",\"label\":\"Contact details\",\"mandatory\":\"true\",\"uiUniqueId\":\"656f6a4d-4175-4051-b22c-9f556b0bc523\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0dc15903d0ebd01079c9d58280703014\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"86618de9-d30f-4b78-9a81-e8e2d6af94d4\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cdc15903dbebd010e96d9fd2ca961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD0dc15903d0ebd01079c9d58280703014</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name>sys_complex_object_cdc15903dbebd010e96d9fd2ca961914</sys_update_name>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:23</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

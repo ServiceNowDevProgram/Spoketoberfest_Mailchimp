@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_23746_mailchimp.Mailchimp_Transactional</id>
+        <multiple_connections>false</multiple_connections>
+        <name>Mailchimp Transactional</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 23:59:16</sys_created_on>
+        <sys_id>e2f1020fdb6fd010e96d9fd2ca9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_23746_mailchimp.Mailchimp_Transactional</sys_name>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name>sys_alias_e2f1020fdb6fd010e96d9fd2ca9619b3</sys_update_name>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 23:59:16</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</application>
+        <file_path/>
+        <instance_id>d11553a0dbb3df0ccbf6d5b0cf961947</instance_id>
+        <instance_name>dev69016</instance_name>
+        <name>sys_alias_e2f1020fdb6fd010e96d9fd2ca9619b3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_23746_mailchimp.Mailchimp_Transactional</id><multiple_connections>false</multiple_connections><name>Mailchimp Transactional</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>nia.mccash</sys_created_by><sys_created_on>2020-10-03 23:59:16</sys_created_on><sys_id>e2f1020fdb6fd010e96d9fd2ca9619b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_23746_mailchimp.Mailchimp_Transactional</sys_name><sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package><sys_policy/><sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope><sys_update_name>sys_alias_e2f1020fdb6fd010e96d9fd2ca9619b3</sys_update_name><sys_updated_by>nia.mccash</sys_updated_by><sys_updated_on>2020-10-03 23:59:16</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-224220273</payload_hash>
+        <record_name>x_23746_mailchimp.Mailchimp_Transactional</record_name>
+        <reverted_from/>
+        <source>5f4b77b2dba7d010e96d9fd2ca9619be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 23:59:16</sys_created_on>
+        <sys_id>86020247db6fd010e96d9fd2ca96191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174f0e7ca080000001</sys_recorded_at>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 23:59:16</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>ce020247c06fd010af2fd42fc130851d</update_guid>
+        <update_guid_history>ce020247c06fd010af2fd42fc130851d:-224220273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 18:26:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>18dbec2f4d5e48a4845bf44040fe0610</sys_id>
+        <sys_metadata>e2f1020fdb6fd010e96d9fd2ca9619b3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_23746_mailchimp.Mailchimp_Transactional</sys_name>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_scope_delete display_value="">0111d8442601457281d3a0e445d280a4</sys_scope_delete>
+        <sys_update_name>sys_alias_e2f1020fdb6fd010e96d9fd2ca9619b3</sys_update_name>
+        <sys_update_version display_value="sys_alias_e2f1020fdb6fd010e96d9fd2ca9619b3">86020247db6fd010e96d9fd2ca96191e</sys_update_version>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 18:26:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
