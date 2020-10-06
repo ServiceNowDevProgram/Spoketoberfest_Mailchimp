@@ -12,8 +12,8 @@
         <description/>
         <ih_action>true</ih_action>
         <internal_name>add_a_contact</internal_name>
-        <label_cache>[{"name":"{{action.list_id}}","label":"action➛Audience","type":"action","ref":""},{"name":"{{action.first_name}}","label":"action➛First name","type":"action","ref":""},{"name":"{{action.last_name}}","label":"action➛Last name","type":"action","ref":""},{"name":"{{action.email}}","label":"action➛Email","type":"action","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}","label":"step➛Add a Contact via REST➛Response Body","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].variable}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].root}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}","label":"step➛Add a Contact via REST➛Status Code","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>1aeabf72dba7d010e96d9fd2ca9619ae</latest_snapshot>
+        <label_cache>[{"name":"{{action.list_id}}","label":"action➛Audience","type":"action","ref":""},{"name":"{{action.first_name}}","label":"action➛First name","type":"action","ref":""},{"name":"{{action.last_name}}","label":"action➛Last name","type":"action","ref":""},{"name":"{{action.email}}","label":"action➛Email","type":"action","ref":""},{"name":"{{action.skip_merge_validation}}","label":"action➛Skip Merge Validation","type":"action","ref":""},{"name":"{{action.status}}","label":"action➛Status","type":"action","ref":""},{"name":"{{action.email_type}}","label":"action➛Email type","type":"action","ref":""},{"name":"{{action.skip_merge_validation5}}","label":"action➛Skip merge validation","type":"action","ref":""},{"name":"{{action.vip}}","label":"action➛VIP","type":"action","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}","label":"step➛Add a Contact via REST➛Response Body","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].variable}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].root}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}","label":"step➛Add a Contact via REST➛Status Code","type":"step","ref":""},{"name":"{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>348953e7dbe31010e96d9fd2ca9619de</latest_snapshot>
         <master_snapshot>15b8fbfedb67d010e96d9fd2ca961964</master_snapshot>
         <name>Add a Contact</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>Add a Contact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
@@ -34,13 +34,25 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_5b1f6cf2dbab9010e96d9fd2ca9619a2</sys_update_name>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:57</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=5b1f6cf2dbab9010e96d9fd2ca9619a2"/>
     <sys_variable_value action="delete_multiple" query="document_key=5b1f6cf2dbab9010e96d9fd2ca9619a2"/>
     <sys_element_mapping action="delete_multiple" query="id=5b1f6cf2dbab9010e96d9fd2ca9619a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contact_details</field>
+        <id>5b1f6cf2dbab9010e96d9fd2ca9619a2</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:24</sys_created_on>
+        <sys_id>05c15903dbebd010e96d9fd2ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5b1f6cf2dbab9010e96d9fd2ca9619a2</table>
+        <value>{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].root}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>member_details</field>
         <id>5b1f6cf2dbab9010e96d9fd2ca9619a2</id>
@@ -65,7 +77,278 @@
         <table>var__m_sys_hub_action_output_5b1f6cf2dbab9010e96d9fd2ca9619a2</table>
         <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}</value>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT INfd02ad76db6f9010e96d9fd2ca96192b"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN49c11903dbebd010e96d9fd2ca9619fe,fd02ad76db6f9010e96d9fd2ca96192b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</action>
+        <cid>f439d3c6-9c4d-4100-90d1-1a7d6d73886c</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>49c11903dbebd010e96d9fd2ca9619fe</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=49c11903dbebd010e96d9fd2ca9619fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49c11903dbebd010e96d9fd2ca9619fe</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:04</sys_created_on>
+        <sys_id>0792d543dbebd010e96d9fd2ca96192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <value>{&#13;
+	"id": "070549eff249a089908c59c5be090ef",&#13;
+	"email_address": "malcom.reynolds@serenity.com",&#13;
+	"unique_email_id": "296204578b7",&#13;
+	"web_id": 1322838514,&#13;
+	"email_type": "html",&#13;
+	"status": "subscribed",&#13;
+	"merge_fields": {&#13;
+		"FNAME": "Malcolm",&#13;
+		"LNAME": "Reynolds",&#13;
+		"ADDRESS": "",&#13;
+		"PHONE": "",&#13;
+		"BIRTHDAY": ""&#13;
+	},&#13;
+	"stats": {&#13;
+		"avg_open_rate": 0,&#13;
+		"avg_click_rate": 0&#13;
+	},&#13;
+	"ip_signup": "",&#13;
+	"timestamp_signup": "",&#13;
+	"ip_opt": "168.190.1.1",&#13;
+	"timestamp_opt": "2020-10-03T20:28:42+00:00",&#13;
+	"member_rating": 2,&#13;
+	"last_changed": "2020-10-03T20:28:42+00:00",&#13;
+	"language": "",&#13;
+	"vip": false,&#13;
+	"email_client": "",&#13;
+	"location": {&#13;
+		"latitude": 0,&#13;
+		"longitude": 0,&#13;
+		"gmtoff": 0,&#13;
+		"dstoff": 0,&#13;
+		"country_code": "",&#13;
+		"timezone": ""&#13;
+	},&#13;
+	"source": "API - Generic",&#13;
+	"tags_count": 0,&#13;
+	"tags": [],&#13;
+	"list_id": "f45e810936",&#13;
+	"_links": [&#13;
+		{&#13;
+			"rel": "self",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "parent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/CollectionResponse.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Members.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "update",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PATCH",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PATCH.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "upsert",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PUT",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PUT.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "DELETE"&#13;
+		},&#13;
+		{&#13;
+			"rel": "activity",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/activity",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Activity/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "goals",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/goals",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Goals/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "notes",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/notes",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Notes/CollectionResponse.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "events",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/events",&#13;
+			"method": "POST",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Events/POST.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete_permanent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/actions/delete-permanent",&#13;
+			"method": "POST"&#13;
+		}&#13;
+	]&#13;
+}</value>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49c11903dbebd010e96d9fd2ca9619fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>45c15903dbebd010e96d9fd2ca961912</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"070549eff249a089908c59c5be090ef"},{"name":"email_address","children":[],"type":"string","jpath":"$.email_address","previewValue":"nia.mccash@utoronto.ca"},{"name":"unique_email_id","children":[],"type":"string","jpath":"$.unique_email_id","previewValue":"296204578b7"},{"name":"web_id","children":[],"type":"string","jpath":"$.web_id","previewValue":"1322838514"},{"name":"email_type","children":[],"type":"string","jpath":"$.email_type","previewValue":"html"},{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"subscribed"},{"name":"merge_fields","children":[{"name":"FNAME","children":[],"type":"string","jpath":"$.merge_fields.FNAME","previewValue":"Nia"},{"name":"LNAME","children":[],"type":"string","jpath":"$.merge_fields.LNAME","previewValue":"McCash"},{"name":"ADDRESS","children":[],"type":"string","jpath":"$.merge_fields.ADDRESS","previewValue":""},{"name":"PHONE","children":[],"type":"string","jpath":"$.merge_fields.PHONE","previewValue":""},{"name":"BIRTHDAY","children":[],"type":"string","jpath":"$.merge_fields.BIRTHDAY","previewValue":""}],"type":"object","jpath":"$.merge_fields","previewValue":""},{"name":"stats","children":[{"name":"avg_open_rate","children":[],"type":"string","jpath":"$.stats.avg_open_rate","previewValue":"0"},{"name":"avg_click_rate","children":[],"type":"string","jpath":"$.stats.avg_click_rate","previewValue":"0"}],"type":"object","jpath":"$.stats","previewValue":""},{"name":"ip_signup","children":[],"type":"string","jpath":"$.ip_signup","previewValue":""},{"name":"timestamp_signup","children":[],"type":"string","jpath":"$.timestamp_signup","previewValue":""},{"name":"ip_opt","children":[],"type":"string","jpath":"$.ip_opt","previewValue":"168.190.1.1"},{"name":"timestamp_opt","children":[],"type":"string","jpath":"$.timestamp_opt","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"member_rating","children":[],"type":"string","jpath":"$.member_rating","previewValue":"2"},{"name":"last_changed","children":[],"type":"string","jpath":"$.last_changed","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"language","children":[],"type":"string","jpath":"$.language","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.vip","previewValue":"false"},{"name":"email_client","children":[],"type":"string","jpath":"$.email_client","previewValue":""},{"name":"location","children":[{"name":"latitude","children":[],"type":"string","jpath":"$.location.latitude","previewValue":"0"},{"name":"longitude","children":[],"type":"string","jpath":"$.location.longitude","previewValue":"0"},{"name":"gmtoff","children":[],"type":"string","jpath":"$.location.gmtoff","previewValue":"0"},{"name":"dstoff","children":[],"type":"string","jpath":"$.location.dstoff","previewValue":"0"},{"name":"country_code","children":[],"type":"string","jpath":"$.location.country_code","previewValue":""},{"name":"timezone","children":[],"type":"string","jpath":"$.location.timezone","previewValue":""}],"type":"object","jpath":"$.location","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.source","previewValue":"API - Generic"},{"name":"tags_count","children":[],"type":"string","jpath":"$.tags_count","previewValue":"0"},{"name":"tags","children":[{"name":"tags_string","children":[],"type":"string","jpath":"$.tags[*]","previewValue":""}],"type":"array.string","jpath":"$.tags[*]","previewValue":""},{"name":"list_id","children":[],"type":"string","jpath":"$.list_id","previewValue":"f45e810936"},{"name":"_links","children":[{"name":"_links_object","children":[{"name":"rel","children":[],"type":"string","jpath":"$._links[*].rel","previewValue":"self"},{"name":"href","children":[],"type":"string","jpath":"$._links[*].href","previewValue":"https://us2.api.mailchimp.com/3.0/lists/f45e810160/members/070549eff249a0169908c59c5be058ed"},{"name":"method","children":[],"type":"string","jpath":"$._links[*].method","previewValue":"GET"},{"name":"targetSchema","children":[],"type":"string","jpath":"$._links[*].targetSchema","previewValue":"https://us2.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"},{"name":"schema","children":[],"type":"string","jpath":"$._links[*].schema","previewValue":""}],"type":"object","jpath":"$._links[*]","previewValue":""}],"type":"array.object","jpath":"$._links[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=49c11903dbebd010e96d9fd2ca9619fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:04</sys_created_on>
+        <sys_id>4b92d543dbebd010e96d9fd2ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:04</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>0dc15903dbebd010e96d9fd2ca961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>c1c15903dbebd010e96d9fd2ca961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=49c11903dbebd010e96d9fd2ca9619fe^sys_idNOT IN81c15903dbebd010e96d9fd2ca961906"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD64045d8331ebd0102a8964a00c8c6fb6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bf3b6a0a-71a6-4c6a-9fd7-82bd3e29a66a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">49c11903dbebd010e96d9fd2ca9619fe</model>
+        <model_id>49c11903dbebd010e96d9fd2ca9619fe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_49c11903dbebd010e96d9fd2ca9619fe</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>81c15903dbebd010e96d9fd2ca961906</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</action>
         <cid>f6c4e791-70f9-4965-9ce6-f809dc028085</cid>
@@ -82,10 +365,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:00:57</sys_created_on>
         <sys_id>fd02ad76db6f9010e96d9fd2ca96192b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 12:48:07</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fd02ad76db6f9010e96d9fd2ca96192b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -138,10 +421,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:21:51</sys_created_on>
         <sys_id>73c6a13edb6f9010e96d9fd2ca96196c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:21:51</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
+        <value>{}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -259,13 +542,16 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:00:57</sys_created_on>
         <sys_id>3902ad76db6f9010e96d9fd2ca961958</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:17:26</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{
   "email_address": "{{action.email}}",
-  "status": "subscribed",
+  "status": "{{action.status}}",
+  "email_type": "{{action.email_type}}",
+  "language": "",
+  "vip": {{action.vip}},
   "merge_fields": {
 	"FNAME": "{{action.first_name}}",
 	"LNAME": "{{action.last_name}}"
@@ -326,11 +612,11 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:21:51</sys_created_on>
         <sys_id>ffc6a13edb6f9010e96d9fd2ca96196b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:21:51</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
+        <value>{"type":"ADV_NV","value":[{"name":"skip_merge_validation","value":"{{action.skip_merge_validation5}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -438,7 +724,169 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN6cb8bbfedb67d010e96d9fd2ca96195f,87c5e1fadb6f9010e96d9fd2ca9619c8,c7c5e1fadb6f9010e96d9fd2ca9619ce,f6c5e1fadb6f9010e96d9fd2ca9619c1"/>
+    <sys_hub_action_input action="delete_multiple" query="model=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN4bc71d87dbebd010e96d9fd2ca961923,4fc71d87dbebd010e96d9fd2ca961929,6cb8bbfedb67d010e96d9fd2ca96195f,87c5e1fadb6f9010e96d9fd2ca9619c8,8c8913e7dbe31010e96d9fd2ca9619ba,c48913e7dbe31010e96d9fd2ca9619d9,c7c5e1fadb6f9010e96d9fd2ca9619ce,f6c5e1fadb6f9010e96d9fd2ca9619c1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=7e5f4382-d899-4372-90b4-ed6b0c5e4bf0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skip_merge_validation5</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Skip merge validation</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</model>
+        <model_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:44</sys_created_on>
+        <sys_id>4bc71d87dbebd010e96d9fd2ca961923</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 18:25:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b31540d6-2dcb-4c4c-bdab-44ad13c60a55</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vip</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>VIP</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</model>
+        <model_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:44</sys_created_on>
+        <sys_id>4fc71d87dbebd010e96d9fd2ca961929</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 18:25:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -483,7 +931,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
         <next_element/>
-        <order>4</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -501,14 +949,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:14</sys_created_on>
         <sys_id>6cb8bbfedb67d010e96d9fd2ca96195f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:14</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -528,9 +976,9 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:14</sys_created_on>
         <sys_id>2cb8bbfedb67d010e96d9fd2ca961978</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:52</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2cb8bbfedb67d010e96d9fd2ca961978"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -577,7 +1025,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
         <next_element/>
-        <order>2</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -595,6 +1043,87 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:17:25</sys_created_on>
         <sys_id>87c5e1fadb6f9010e96d9fd2ca9619c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:55:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=80ea5101-d49c-4e0b-8b12-28f0970b9283</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Status</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</model>
+        <model_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+        <sys_id>8c8913e7dbe31010e96d9fd2ca9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -602,7 +1131,88 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:17:25</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=74aea779-fd12-439c-b1c9-aed6a381cd64</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Email type</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</model>
+        <model_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+        <sys_id>c48913e7dbe31010e96d9fd2ca9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -658,7 +1268,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
         <next_element/>
-        <order>3</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -676,14 +1286,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:17:25</sys_created_on>
         <sys_id>c7c5e1fadb6f9010e96d9fd2ca9619ce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:17:25</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -739,7 +1349,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -757,14 +1367,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:17:25</sys_created_on>
         <sys_id>f6c5e1fadb6f9010e96d9fd2ca9619c1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:17:25</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -776,12 +1386,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN7deabf72dba7d010e96d9fd2ca961916"/>
+    <sys_hub_action_output action="delete_multiple" query="model=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN41c15903dbebd010e96d9fd2ca961917"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=661714b8-cce5-477c-a0c2-e24e16c8c435</attributes>
+        <attributes>co_type_name=FDcf92d543daebd0100f7b02eb1e64692b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=f439d3c6-9c4d-4100-90d1-1a7d6d73886c,sourceType=step,sourceUiUniqueId=f078d45c-0ab4-4262-beb8-9a4614c8c62b,uiType=object,uiTypeLabel=Object,uiUniqueId=298844b8-f1a9-4737-8f94-7221eea8e129</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -805,8 +1415,8 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>status_code</element>
-        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element>contact_details</element>
+        <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -815,9 +1425,9 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status code</label>
+        <label>Contact details</label>
         <mandatory>true</mandatory>
-        <max_length>8000</max_length>
+        <max_length>65000</max_length>
         <model display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</model>
         <model_id>5b1f6cf2dbab9010e96d9fd2ca9619a2</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
@@ -839,8 +1449,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>nia.mccash</sys_created_by>
-        <sys_created_on>2020-10-03 14:08:53</sys_created_on>
-        <sys_id>7deabf72dba7d010e96d9fd2ca961916</sys_id>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>41c15903dbebd010e96d9fd2ca961917</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -848,7 +1458,7 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:53</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:32:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -860,7 +1470,278 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT INfd02ad76db6f9010e96d9fd2ca96192b"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN49c11903dbebd010e96d9fd2ca9619fe,fd02ad76db6f9010e96d9fd2ca96192b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</action>
+        <cid>f439d3c6-9c4d-4100-90d1-1a7d6d73886c</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>49c11903dbebd010e96d9fd2ca9619fe</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=49c11903dbebd010e96d9fd2ca9619fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49c11903dbebd010e96d9fd2ca9619fe</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:04</sys_created_on>
+        <sys_id>0792d543dbebd010e96d9fd2ca96192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <value>{&#13;
+	"id": "070549eff249a089908c59c5be090ef",&#13;
+	"email_address": "malcom.reynolds@serenity.com",&#13;
+	"unique_email_id": "296204578b7",&#13;
+	"web_id": 1322838514,&#13;
+	"email_type": "html",&#13;
+	"status": "subscribed",&#13;
+	"merge_fields": {&#13;
+		"FNAME": "Malcolm",&#13;
+		"LNAME": "Reynolds",&#13;
+		"ADDRESS": "",&#13;
+		"PHONE": "",&#13;
+		"BIRTHDAY": ""&#13;
+	},&#13;
+	"stats": {&#13;
+		"avg_open_rate": 0,&#13;
+		"avg_click_rate": 0&#13;
+	},&#13;
+	"ip_signup": "",&#13;
+	"timestamp_signup": "",&#13;
+	"ip_opt": "168.190.1.1",&#13;
+	"timestamp_opt": "2020-10-03T20:28:42+00:00",&#13;
+	"member_rating": 2,&#13;
+	"last_changed": "2020-10-03T20:28:42+00:00",&#13;
+	"language": "",&#13;
+	"vip": false,&#13;
+	"email_client": "",&#13;
+	"location": {&#13;
+		"latitude": 0,&#13;
+		"longitude": 0,&#13;
+		"gmtoff": 0,&#13;
+		"dstoff": 0,&#13;
+		"country_code": "",&#13;
+		"timezone": ""&#13;
+	},&#13;
+	"source": "API - Generic",&#13;
+	"tags_count": 0,&#13;
+	"tags": [],&#13;
+	"list_id": "f45e810936",&#13;
+	"_links": [&#13;
+		{&#13;
+			"rel": "self",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "parent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/CollectionResponse.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Members.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "update",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PATCH",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PATCH.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "upsert",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PUT",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PUT.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "DELETE"&#13;
+		},&#13;
+		{&#13;
+			"rel": "activity",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/activity",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Activity/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "goals",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/goals",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Goals/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "notes",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/notes",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Notes/CollectionResponse.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "events",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/events",&#13;
+			"method": "POST",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Events/POST.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete_permanent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/actions/delete-permanent",&#13;
+			"method": "POST"&#13;
+		}&#13;
+	]&#13;
+}</value>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>49c11903dbebd010e96d9fd2ca9619fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>45c15903dbebd010e96d9fd2ca961912</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"070549eff249a089908c59c5be090ef"},{"name":"email_address","children":[],"type":"string","jpath":"$.email_address","previewValue":"nia.mccash@utoronto.ca"},{"name":"unique_email_id","children":[],"type":"string","jpath":"$.unique_email_id","previewValue":"296204578b7"},{"name":"web_id","children":[],"type":"string","jpath":"$.web_id","previewValue":"1322838514"},{"name":"email_type","children":[],"type":"string","jpath":"$.email_type","previewValue":"html"},{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"subscribed"},{"name":"merge_fields","children":[{"name":"FNAME","children":[],"type":"string","jpath":"$.merge_fields.FNAME","previewValue":"Nia"},{"name":"LNAME","children":[],"type":"string","jpath":"$.merge_fields.LNAME","previewValue":"McCash"},{"name":"ADDRESS","children":[],"type":"string","jpath":"$.merge_fields.ADDRESS","previewValue":""},{"name":"PHONE","children":[],"type":"string","jpath":"$.merge_fields.PHONE","previewValue":""},{"name":"BIRTHDAY","children":[],"type":"string","jpath":"$.merge_fields.BIRTHDAY","previewValue":""}],"type":"object","jpath":"$.merge_fields","previewValue":""},{"name":"stats","children":[{"name":"avg_open_rate","children":[],"type":"string","jpath":"$.stats.avg_open_rate","previewValue":"0"},{"name":"avg_click_rate","children":[],"type":"string","jpath":"$.stats.avg_click_rate","previewValue":"0"}],"type":"object","jpath":"$.stats","previewValue":""},{"name":"ip_signup","children":[],"type":"string","jpath":"$.ip_signup","previewValue":""},{"name":"timestamp_signup","children":[],"type":"string","jpath":"$.timestamp_signup","previewValue":""},{"name":"ip_opt","children":[],"type":"string","jpath":"$.ip_opt","previewValue":"168.190.1.1"},{"name":"timestamp_opt","children":[],"type":"string","jpath":"$.timestamp_opt","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"member_rating","children":[],"type":"string","jpath":"$.member_rating","previewValue":"2"},{"name":"last_changed","children":[],"type":"string","jpath":"$.last_changed","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"language","children":[],"type":"string","jpath":"$.language","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.vip","previewValue":"false"},{"name":"email_client","children":[],"type":"string","jpath":"$.email_client","previewValue":""},{"name":"location","children":[{"name":"latitude","children":[],"type":"string","jpath":"$.location.latitude","previewValue":"0"},{"name":"longitude","children":[],"type":"string","jpath":"$.location.longitude","previewValue":"0"},{"name":"gmtoff","children":[],"type":"string","jpath":"$.location.gmtoff","previewValue":"0"},{"name":"dstoff","children":[],"type":"string","jpath":"$.location.dstoff","previewValue":"0"},{"name":"country_code","children":[],"type":"string","jpath":"$.location.country_code","previewValue":""},{"name":"timezone","children":[],"type":"string","jpath":"$.location.timezone","previewValue":""}],"type":"object","jpath":"$.location","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.source","previewValue":"API - Generic"},{"name":"tags_count","children":[],"type":"string","jpath":"$.tags_count","previewValue":"0"},{"name":"tags","children":[{"name":"tags_string","children":[],"type":"string","jpath":"$.tags[*]","previewValue":""}],"type":"array.string","jpath":"$.tags[*]","previewValue":""},{"name":"list_id","children":[],"type":"string","jpath":"$.list_id","previewValue":"f45e810936"},{"name":"_links","children":[{"name":"_links_object","children":[{"name":"rel","children":[],"type":"string","jpath":"$._links[*].rel","previewValue":"self"},{"name":"href","children":[],"type":"string","jpath":"$._links[*].href","previewValue":"https://us2.api.mailchimp.com/3.0/lists/f45e810160/members/070549eff249a0169908c59c5be058ed"},{"name":"method","children":[],"type":"string","jpath":"$._links[*].method","previewValue":"GET"},{"name":"targetSchema","children":[],"type":"string","jpath":"$._links[*].targetSchema","previewValue":"https://us2.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"},{"name":"schema","children":[],"type":"string","jpath":"$._links[*].schema","previewValue":""}],"type":"object","jpath":"$._links[*]","previewValue":""}],"type":"array.object","jpath":"$._links[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=49c11903dbebd010e96d9fd2ca9619fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:04</sys_created_on>
+        <sys_id>4b92d543dbebd010e96d9fd2ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:04</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>0dc15903dbebd010e96d9fd2ca961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>49c11903dbebd010e96d9fd2ca9619fe</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>c1c15903dbebd010e96d9fd2ca961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:28:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=49c11903dbebd010e96d9fd2ca9619fe^sys_idNOT IN81c15903dbebd010e96d9fd2ca961906"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD64045d8331ebd0102a8964a00c8c6fb6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bf3b6a0a-71a6-4c6a-9fd7-82bd3e29a66a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">49c11903dbebd010e96d9fd2ca9619fe</model>
+        <model_id>49c11903dbebd010e96d9fd2ca9619fe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_49c11903dbebd010e96d9fd2ca9619fe</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:28:23</sys_created_on>
+        <sys_id>81c15903dbebd010e96d9fd2ca961906</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</action>
         <cid>f6c4e791-70f9-4965-9ce6-f809dc028085</cid>
@@ -877,10 +1758,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:00:57</sys_created_on>
         <sys_id>fd02ad76db6f9010e96d9fd2ca96192b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 12:48:07</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fd02ad76db6f9010e96d9fd2ca96192b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -933,10 +1814,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:21:51</sys_created_on>
         <sys_id>73c6a13edb6f9010e96d9fd2ca96196c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:21:51</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
+        <value>{}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1054,13 +1935,16 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:00:57</sys_created_on>
         <sys_id>3902ad76db6f9010e96d9fd2ca961958</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:17:26</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{
   "email_address": "{{action.email}}",
-  "status": "subscribed",
+  "status": "{{action.status}}",
+  "email_type": "{{action.email_type}}",
+  "language": "",
+  "vip": {{action.vip}},
   "merge_fields": {
 	"FNAME": "{{action.first_name}}",
 	"LNAME": "{{action.last_name}}"
@@ -1121,11 +2005,11 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 03:21:51</sys_created_on>
         <sys_id>ffc6a13edb6f9010e96d9fd2ca96196b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 03:21:51</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
+        <value>{"type":"ADV_NV","value":[{"name":"skip_merge_validation","value":"{{action.skip_merge_validation5}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -1233,7 +2117,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN03c5e1fadb6f9010e96d9fd2ca9619c7,20b8bbfedb67d010e96d9fd2ca961977,43c5e1fadb6f9010e96d9fd2ca9619cd,83c5e1fadb6f9010e96d9fd2ca9619d3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN03c5e1fadb6f9010e96d9fd2ca9619c7,20b8bbfedb67d010e96d9fd2ca961977,43c5e1fadb6f9010e96d9fd2ca9619cd,83c5e1fadb6f9010e96d9fd2ca9619d3,87c71d87dbebd010e96d9fd2ca961928,8bc71d87dbebd010e96d9fd2ca96192e,8c8913e7dbe31010e96d9fd2ca9619cf,cc8913e7dbe31010e96d9fd2ca9619df"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>first_name</element>
         <help/>
@@ -1326,7 +2210,158 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT INf5ea7f72dba7d010e96d9fd2ca9619d5,b5ea7f72dba7d010e96d9fd2ca9619d4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>skip_merge_validation5</element>
+        <help/>
+        <hint/>
+        <label>Skip merge validation</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:44</sys_created_on>
+        <sys_id>87c71d87dbebd010e96d9fd2ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vip</element>
+        <help/>
+        <hint/>
+        <label>VIP</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:44</sys_created_on>
+        <sys_id>8bc71d87dbebd010e96d9fd2ca96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:54:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+        <sys_id>8c8913e7dbe31010e96d9fd2ca9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_type</element>
+        <help/>
+        <hint/>
+        <label>Email type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+        <sys_id>cc8913e7dbe31010e96d9fd2ca9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT INc08913e7dbe31010e96d9fd2ca9619dc,408913e7dbe31010e96d9fd2ca9619dd,0c8913e7dbe31010e96d9fd2ca9619dd,f5ea7f72dba7d010e96d9fd2ca9619d5,b5ea7f72dba7d010e96d9fd2ca9619d4,408913e7dbe31010e96d9fd2ca9619ca,cc8913e7dbe31010e96d9fd2ca9619ca,888913e7dbe31010e96d9fd2ca9619cb,448913e7dbe31010e96d9fd2ca9619cc,008913e7dbe31010e96d9fd2ca9619cd,c88913e7dbe31010e96d9fd2ca9619cd"/>
+    <sys_choice field="email_type" table="var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c08913e7dbe31010e96d9fd2ca9619dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HTML</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>408913e7dbe31010e96d9fd2ca9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>html</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plain-text</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>2</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c8913e7dbe31010e96d9fd2ca9619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>text</value>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="list_id" table="var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1342,9 +2377,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f5ea7f72dba7d010e96d9fd2ca9619d5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>nia.mccash</sys_updated_by>
-            <sys_updated_on>2020-10-03 14:08:52</sys_updated_on>
+            <sys_updated_on>2020-10-05 18:25:26</sys_updated_on>
             <value>f45e810160</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -1361,25 +2396,141 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b5ea7f72dba7d010e96d9fd2ca9619d4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>nia.mccash</sys_updated_by>
-            <sys_updated_on>2020-10-03 14:08:52</sys_updated_on>
+            <sys_updated_on>2020-10-05 18:25:26</sys_updated_on>
             <value/>
         </sys_choice>
     </sys_choice>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT IN31eabf72dba7d010e96d9fd2ca96191c"/>
+    <sys_choice field="status" table="var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>408913e7dbe31010e96d9fd2ca9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Subscribed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc8913e7dbe31010e96d9fd2ca9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>subscribed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unsubscribed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>2</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>888913e7dbe31010e96d9fd2ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>unsubscribed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cleaned</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>3</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>448913e7dbe31010e96d9fd2ca9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>cleaned</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>4</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>008913e7dbe31010e96d9fd2ca9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transactional</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
+            <sequence>5</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c88913e7dbe31010e96d9fd2ca9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:22</sys_updated_on>
+            <value>transactional</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_5b1f6cf2dbab9010e96d9fd2ca9619a2^sys_idNOT INcdc15903dbebd010e96d9fd2ca96191c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>status_code</element>
+        <element>contact_details</element>
         <help/>
         <hint/>
-        <label>Status code</label>
+        <label>Contact details</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_5b1f6cf2dbab9010e96d9fd2ca9619a2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>nia.mccash</sys_created_by>
-        <sys_created_on>2020-10-03 14:08:53</sys_created_on>
-        <sys_id>31eabf72dba7d010e96d9fd2ca96191c</sys_id>
+        <sys_created_on>2020-10-03 20:28:24</sys_created_on>
+        <sys_id>cdc15903dbebd010e96d9fd2ca96191c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
@@ -1387,7 +2538,7 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:53</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:28:24</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1395,17 +2546,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Add a Contact">5b1f6cf2dbab9010e96d9fd2ca9619a2</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"42b83ffedb67d010e96d9fd2ca96197f","name":"plan"}}</plan>
-        <snapshot>1aeabf72dba7d010e96d9fd2ca9619ae</snapshot>
+        <snapshot>348953e7dbe31010e96d9fd2ca9619de</snapshot>
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:20</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>42b83ffedb67d010e96d9fd2ca96197f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:58</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:31</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1418,7 +2569,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>add_a_contact</internal_name>
-        <label_cache>[{"name":"{{action.list_id}}","label":"action➛Audience","type":"action","ref":""},{"name":"{{action.first_name}}","label":"action➛First name","type":"action","ref":""},{"name":"{{action.last_name}}","label":"action➛Last name","type":"action","ref":""},{"name":"{{action.email}}","label":"action➛Email","type":"action","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}","label":"step➛Add a Contact via REST➛Response Body","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].variable}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].root}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}","label":"step➛Add a Contact via REST➛Status Code","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.list_id}}","label":"action➛Audience","type":"action","ref":""},{"name":"{{action.first_name}}","label":"action➛First name","type":"action","ref":""},{"name":"{{action.last_name}}","label":"action➛Last name","type":"action","ref":""},{"name":"{{action.email}}","label":"action➛Email","type":"action","ref":""},{"name":"{{action.skip_merge_validation}}","label":"action➛Skip Merge Validation","type":"action","ref":""},{"name":"{{action.status}}","label":"action➛Status","type":"action","ref":""},{"name":"{{action.email_type}}","label":"action➛Email type","type":"action","ref":""},{"name":"{{action.skip_merge_validation5}}","label":"action➛Skip merge validation","type":"action","ref":""},{"name":"{{action.vip}}","label":"action➛VIP","type":"action","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}","label":"step➛Add a Contact via REST➛Response Body","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].variable}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[d598c91a-a19f-4156-8b66-0f39f6c5301e].root}}","label":"step➛Parse Returned Member Details➛root","type":"step","ref":""},{"name":"{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}","label":"step➛Add a Contact via REST➛Status Code","type":"step","ref":""},{"name":"{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":""},{"name":"{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Add a Contact</name>
         <natlang/>
@@ -1431,7 +2582,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>15b8fbfedb67d010e96d9fd2ca961964</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1439,13 +2590,25 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:56</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:47</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=15b8fbfedb67d010e96d9fd2ca961964"/>
     <sys_variable_value action="delete_multiple" query="document_key=15b8fbfedb67d010e96d9fd2ca961964"/>
     <sys_element_mapping action="delete_multiple" query="id=15b8fbfedb67d010e96d9fd2ca961964"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contact_details</field>
+        <id>15b8fbfedb67d010e96d9fd2ca961964</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>0da25943dbebd010e96d9fd2ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_hub_action_output_15b8fbfedb67d010e96d9fd2ca961964</table>
+        <value>{{step[f439d3c6-9c4d-4100-90d1-1a7d6d73886c].root}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>member_details</field>
         <id>15b8fbfedb67d010e96d9fd2ca961964</id>
@@ -1470,7 +2633,7 @@
         <table>var__m_sys_hub_action_output_15b8fbfedb67d010e96d9fd2ca961964</table>
         <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].status_code}}</value>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INd9b8fbfedb67d010e96d9fd2ca96198d"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INd9b8fbfedb67d010e96d9fd2ca96198d,f4a25943dbebd010e96d9fd2ca961906"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</action>
         <cid>f6c4e791-70f9-4965-9ce6-f809dc028085</cid>
@@ -1487,10 +2650,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>d9b8fbfedb67d010e96d9fd2ca96198d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d9b8fbfedb67d010e96d9fd2ca96198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1515,10 +2678,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>2db8fbfedb67d010e96d9fd2ca9619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
+        <value>{}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1636,13 +2799,16 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>6db8fbfedb67d010e96d9fd2ca96199f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{
   "email_address": "{{action.email}}",
-  "status": "subscribed",
+  "status": "{{action.status}}",
+  "email_type": "{{action.email_type}}",
+  "language": "",
+  "vip": {{action.vip}},
   "merge_fields": {
 	"FNAME": "{{action.first_name}}",
 	"LNAME": "{{action.last_name}}"
@@ -1703,11 +2869,11 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>65b8fbfedb67d010e96d9fd2ca9619a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
+        <value>{"type":"ADV_NV","value":[{"name":"skip_merge_validation","value":"{{action.skip_merge_validation5}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -1815,7 +2981,440 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN5db8fbfedb67d010e96d9fd2ca96196b,9db8fbfedb67d010e96d9fd2ca961971,d1b8fbfedb67d010e96d9fd2ca961965,ddb8fbfedb67d010e96d9fd2ca961977"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</action>
+        <cid>f439d3c6-9c4d-4100-90d1-1a7d6d73886c</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f4a25943dbebd010e96d9fd2ca961906</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f4a25943dbebd010e96d9fd2ca961906"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4a25943dbebd010e96d9fd2ca961906</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>30a25943dbebd010e96d9fd2ca961914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"070549eff249a089908c59c5be090ef"},{"name":"email_address","children":[],"type":"string","jpath":"$.email_address","previewValue":"nia.mccash@utoronto.ca"},{"name":"unique_email_id","children":[],"type":"string","jpath":"$.unique_email_id","previewValue":"296204578b7"},{"name":"web_id","children":[],"type":"string","jpath":"$.web_id","previewValue":"1322838514"},{"name":"email_type","children":[],"type":"string","jpath":"$.email_type","previewValue":"html"},{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"subscribed"},{"name":"merge_fields","children":[{"name":"FNAME","children":[],"type":"string","jpath":"$.merge_fields.FNAME","previewValue":"Nia"},{"name":"LNAME","children":[],"type":"string","jpath":"$.merge_fields.LNAME","previewValue":"McCash"},{"name":"ADDRESS","children":[],"type":"string","jpath":"$.merge_fields.ADDRESS","previewValue":""},{"name":"PHONE","children":[],"type":"string","jpath":"$.merge_fields.PHONE","previewValue":""},{"name":"BIRTHDAY","children":[],"type":"string","jpath":"$.merge_fields.BIRTHDAY","previewValue":""}],"type":"object","jpath":"$.merge_fields","previewValue":""},{"name":"stats","children":[{"name":"avg_open_rate","children":[],"type":"string","jpath":"$.stats.avg_open_rate","previewValue":"0"},{"name":"avg_click_rate","children":[],"type":"string","jpath":"$.stats.avg_click_rate","previewValue":"0"}],"type":"object","jpath":"$.stats","previewValue":""},{"name":"ip_signup","children":[],"type":"string","jpath":"$.ip_signup","previewValue":""},{"name":"timestamp_signup","children":[],"type":"string","jpath":"$.timestamp_signup","previewValue":""},{"name":"ip_opt","children":[],"type":"string","jpath":"$.ip_opt","previewValue":"168.190.1.1"},{"name":"timestamp_opt","children":[],"type":"string","jpath":"$.timestamp_opt","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"member_rating","children":[],"type":"string","jpath":"$.member_rating","previewValue":"2"},{"name":"last_changed","children":[],"type":"string","jpath":"$.last_changed","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"language","children":[],"type":"string","jpath":"$.language","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.vip","previewValue":"false"},{"name":"email_client","children":[],"type":"string","jpath":"$.email_client","previewValue":""},{"name":"location","children":[{"name":"latitude","children":[],"type":"string","jpath":"$.location.latitude","previewValue":"0"},{"name":"longitude","children":[],"type":"string","jpath":"$.location.longitude","previewValue":"0"},{"name":"gmtoff","children":[],"type":"string","jpath":"$.location.gmtoff","previewValue":"0"},{"name":"dstoff","children":[],"type":"string","jpath":"$.location.dstoff","previewValue":"0"},{"name":"country_code","children":[],"type":"string","jpath":"$.location.country_code","previewValue":""},{"name":"timezone","children":[],"type":"string","jpath":"$.location.timezone","previewValue":""}],"type":"object","jpath":"$.location","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.source","previewValue":"API - Generic"},{"name":"tags_count","children":[],"type":"string","jpath":"$.tags_count","previewValue":"0"},{"name":"tags","children":[{"name":"tags_string","children":[],"type":"string","jpath":"$.tags[*]","previewValue":""}],"type":"array.string","jpath":"$.tags[*]","previewValue":""},{"name":"list_id","children":[],"type":"string","jpath":"$.list_id","previewValue":"f45e810936"},{"name":"_links","children":[{"name":"_links_object","children":[{"name":"rel","children":[],"type":"string","jpath":"$._links[*].rel","previewValue":"self"},{"name":"href","children":[],"type":"string","jpath":"$._links[*].href","previewValue":"https://us2.api.mailchimp.com/3.0/lists/f45e810160/members/070549eff249a0169908c59c5be058ed"},{"name":"method","children":[],"type":"string","jpath":"$._links[*].method","previewValue":"GET"},{"name":"targetSchema","children":[],"type":"string","jpath":"$._links[*].targetSchema","previewValue":"https://us2.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"},{"name":"schema","children":[],"type":"string","jpath":"$._links[*].schema","previewValue":""}],"type":"object","jpath":"$._links[*]","previewValue":""}],"type":"array.object","jpath":"$._links[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4a25943dbebd010e96d9fd2ca961906</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f0a25943dbebd010e96d9fd2ca961914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+        <value>{&#13;
+	"id": "070549eff249a089908c59c5be090ef",&#13;
+	"email_address": "malcom.reynolds@serenity.com",&#13;
+	"unique_email_id": "296204578b7",&#13;
+	"web_id": 1322838514,&#13;
+	"email_type": "html",&#13;
+	"status": "subscribed",&#13;
+	"merge_fields": {&#13;
+		"FNAME": "Malcolm",&#13;
+		"LNAME": "Reynolds",&#13;
+		"ADDRESS": "",&#13;
+		"PHONE": "",&#13;
+		"BIRTHDAY": ""&#13;
+	},&#13;
+	"stats": {&#13;
+		"avg_open_rate": 0,&#13;
+		"avg_click_rate": 0&#13;
+	},&#13;
+	"ip_signup": "",&#13;
+	"timestamp_signup": "",&#13;
+	"ip_opt": "168.190.1.1",&#13;
+	"timestamp_opt": "2020-10-03T20:28:42+00:00",&#13;
+	"member_rating": 2,&#13;
+	"last_changed": "2020-10-03T20:28:42+00:00",&#13;
+	"language": "",&#13;
+	"vip": false,&#13;
+	"email_client": "",&#13;
+	"location": {&#13;
+		"latitude": 0,&#13;
+		"longitude": 0,&#13;
+		"gmtoff": 0,&#13;
+		"dstoff": 0,&#13;
+		"country_code": "",&#13;
+		"timezone": ""&#13;
+	},&#13;
+	"source": "API - Generic",&#13;
+	"tags_count": 0,&#13;
+	"tags": [],&#13;
+	"list_id": "f45e810936",&#13;
+	"_links": [&#13;
+		{&#13;
+			"rel": "self",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "parent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/CollectionResponse.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Members.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "update",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PATCH",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PATCH.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "upsert",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PUT",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PUT.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "DELETE"&#13;
+		},&#13;
+		{&#13;
+			"rel": "activity",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/activity",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Activity/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "goals",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/goals",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Goals/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "notes",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/notes",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Notes/CollectionResponse.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "events",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/events",&#13;
+			"method": "POST",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Events/POST.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete_permanent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/actions/delete-permanent",&#13;
+			"method": "POST"&#13;
+		}&#13;
+	]&#13;
+}</value>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f4a25943dbebd010e96d9fd2ca961906"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>bca25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>38a25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f8a25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f4a25943dbebd010e96d9fd2ca961906^sys_idNOT IN34a25943dbebd010e96d9fd2ca96190b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD658993e77fe3101060abd38175ac5695,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bf3b6a0a-71a6-4c6a-9fd7-82bd3e29a66a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">f4a25943dbebd010e96d9fd2ca961906</model>
+        <model_id>f4a25943dbebd010e96d9fd2ca961906</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f4a25943dbebd010e96d9fd2ca961906</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>34a25943dbebd010e96d9fd2ca96190b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN118993e7dbe31010e96d9fd2ca961977,33c75d87dbebd010e96d9fd2ca961979,5db8fbfedb67d010e96d9fd2ca96196b,9d8993e7dbe31010e96d9fd2ca961964,9db8fbfedb67d010e96d9fd2ca961971,d1b8fbfedb67d010e96d9fd2ca961965,ddb8fbfedb67d010e96d9fd2ca961977,f3c75d87dbebd010e96d9fd2ca96197f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=74aea779-fd12-439c-b1c9-aed6a381cd64</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Email type</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</model>
+        <model_id>15b8fbfedb67d010e96d9fd2ca961964</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:28</sys_created_on>
+        <sys_id>118993e7dbe31010e96d9fd2ca961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=7e5f4382-d899-4372-90b4-ed6b0c5e4bf0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skip_merge_validation5</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Skip merge validation</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</model>
+        <model_id>15b8fbfedb67d010e96d9fd2ca961964</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:47</sys_created_on>
+        <sys_id>33c75d87dbebd010e96d9fd2ca961979</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 18:25:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1860,7 +3459,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
         <next_element/>
-        <order>2</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1878,6 +3477,87 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>5db8fbfedb67d010e96d9fd2ca96196b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:55:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=80ea5101-d49c-4e0b-8b12-28f0970b9283</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Status</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</model>
+        <model_id>15b8fbfedb67d010e96d9fd2ca961964</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+        <sys_id>9d8993e7dbe31010e96d9fd2ca961964</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1885,7 +3565,7 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:17</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1941,7 +3621,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
         <next_element/>
-        <order>3</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1959,14 +3639,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>9db8fbfedb67d010e96d9fd2ca961971</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:17</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2022,7 +3702,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2040,14 +3720,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>d1b8fbfedb67d010e96d9fd2ca961965</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:17</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2103,7 +3783,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
         <next_element/>
-        <order>4</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2121,14 +3801,14 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>ddb8fbfedb67d010e96d9fd2ca961977</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:17</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:55:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2148,17 +3828,16 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>15b8fbfedb67d010e96d9fd2ca96198b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:56</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=15b8fbfedb67d010e96d9fd2ca96198b"/>
-    <sys_hub_action_output action="delete_multiple" query="model=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN7aeaff72dba7d010e96d9fd2ca961937"/>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=661714b8-cce5-477c-a0c2-e24e16c8c435</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b31540d6-2dcb-4c4c-bdab-44ad13c60a55</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2182,8 +3861,90 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>status_code</element>
-        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element>vip</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>VIP</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</model>
+        <model_id>15b8fbfedb67d010e96d9fd2ca961964</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:48</sys_created_on>
+        <sys_id>f3c75d87dbebd010e96d9fd2ca96197f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 18:25:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INf4a25943dbebd010e96d9fd2ca961918"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD658993e7b5e3101057c82f8ed69f059f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=f439d3c6-9c4d-4100-90d1-1a7d6d73886c,sourceType=step,sourceUiUniqueId=f078d45c-0ab4-4262-beb8-9a4614c8c62b,uiType=object,uiTypeLabel=Object,uiUniqueId=298844b8-f1a9-4737-8f94-7221eea8e129</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contact_details</element>
+        <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -2192,9 +3953,9 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Status code</label>
+        <label>Contact details</label>
         <mandatory>true</mandatory>
-        <max_length>8000</max_length>
+        <max_length>65000</max_length>
         <model display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</model>
         <model_id>15b8fbfedb67d010e96d9fd2ca961964</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
@@ -2216,16 +3977,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>nia.mccash</sys_created_by>
-        <sys_created_on>2020-10-03 14:08:56</sys_created_on>
-        <sys_id>7aeaff72dba7d010e96d9fd2ca961937</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f4a25943dbebd010e96d9fd2ca961918</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:57</sys_updated_on>
+        <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2237,7 +3998,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INd9b8fbfedb67d010e96d9fd2ca96198d"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INd9b8fbfedb67d010e96d9fd2ca96198d,f4a25943dbebd010e96d9fd2ca961906"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</action>
         <cid>f6c4e791-70f9-4965-9ce6-f809dc028085</cid>
@@ -2254,10 +4015,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:17</sys_created_on>
         <sys_id>d9b8fbfedb67d010e96d9fd2ca96198d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d9b8fbfedb67d010e96d9fd2ca96198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2282,10 +4043,10 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>2db8fbfedb67d010e96d9fd2ca9619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
+        <value>{}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2403,13 +4164,16 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>6db8fbfedb67d010e96d9fd2ca96199f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{
   "email_address": "{{action.email}}",
-  "status": "subscribed",
+  "status": "{{action.status}}",
+  "email_type": "{{action.email_type}}",
+  "language": "",
+  "vip": {{action.vip}},
   "merge_fields": {
 	"FNAME": "{{action.first_name}}",
 	"LNAME": "{{action.last_name}}"
@@ -2470,11 +4234,11 @@
         <sys_created_by>nia.mccash</sys_created_by>
         <sys_created_on>2020-10-03 13:59:18</sys_created_on>
         <sys_id>65b8fbfedb67d010e96d9fd2ca9619a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 13:59:18</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
+        <value>{"type":"ADV_NV","value":[{"name":"skip_merge_validation","value":"{{action.skip_merge_validation5}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
@@ -2582,7 +4346,301 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN19b8fbfedb67d010e96d9fd2ca961970,59b8fbfedb67d010e96d9fd2ca961976,d5b8fbfedb67d010e96d9fd2ca96196a,ddb8fbfedb67d010e96d9fd2ca961989"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Add a Contact">15b8fbfedb67d010e96d9fd2ca961964</action>
+        <cid>f439d3c6-9c4d-4100-90d1-1a7d6d73886c</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f4a25943dbebd010e96d9fd2ca961906</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f4a25943dbebd010e96d9fd2ca961906"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4a25943dbebd010e96d9fd2ca961906</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>30a25943dbebd010e96d9fd2ca961914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"070549eff249a089908c59c5be090ef"},{"name":"email_address","children":[],"type":"string","jpath":"$.email_address","previewValue":"nia.mccash@utoronto.ca"},{"name":"unique_email_id","children":[],"type":"string","jpath":"$.unique_email_id","previewValue":"296204578b7"},{"name":"web_id","children":[],"type":"string","jpath":"$.web_id","previewValue":"1322838514"},{"name":"email_type","children":[],"type":"string","jpath":"$.email_type","previewValue":"html"},{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"subscribed"},{"name":"merge_fields","children":[{"name":"FNAME","children":[],"type":"string","jpath":"$.merge_fields.FNAME","previewValue":"Nia"},{"name":"LNAME","children":[],"type":"string","jpath":"$.merge_fields.LNAME","previewValue":"McCash"},{"name":"ADDRESS","children":[],"type":"string","jpath":"$.merge_fields.ADDRESS","previewValue":""},{"name":"PHONE","children":[],"type":"string","jpath":"$.merge_fields.PHONE","previewValue":""},{"name":"BIRTHDAY","children":[],"type":"string","jpath":"$.merge_fields.BIRTHDAY","previewValue":""}],"type":"object","jpath":"$.merge_fields","previewValue":""},{"name":"stats","children":[{"name":"avg_open_rate","children":[],"type":"string","jpath":"$.stats.avg_open_rate","previewValue":"0"},{"name":"avg_click_rate","children":[],"type":"string","jpath":"$.stats.avg_click_rate","previewValue":"0"}],"type":"object","jpath":"$.stats","previewValue":""},{"name":"ip_signup","children":[],"type":"string","jpath":"$.ip_signup","previewValue":""},{"name":"timestamp_signup","children":[],"type":"string","jpath":"$.timestamp_signup","previewValue":""},{"name":"ip_opt","children":[],"type":"string","jpath":"$.ip_opt","previewValue":"168.190.1.1"},{"name":"timestamp_opt","children":[],"type":"string","jpath":"$.timestamp_opt","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"member_rating","children":[],"type":"string","jpath":"$.member_rating","previewValue":"2"},{"name":"last_changed","children":[],"type":"string","jpath":"$.last_changed","previewValue":"2020-10-03T20:28:42+00:00"},{"name":"language","children":[],"type":"string","jpath":"$.language","previewValue":""},{"name":"vip","children":[],"type":"string","jpath":"$.vip","previewValue":"false"},{"name":"email_client","children":[],"type":"string","jpath":"$.email_client","previewValue":""},{"name":"location","children":[{"name":"latitude","children":[],"type":"string","jpath":"$.location.latitude","previewValue":"0"},{"name":"longitude","children":[],"type":"string","jpath":"$.location.longitude","previewValue":"0"},{"name":"gmtoff","children":[],"type":"string","jpath":"$.location.gmtoff","previewValue":"0"},{"name":"dstoff","children":[],"type":"string","jpath":"$.location.dstoff","previewValue":"0"},{"name":"country_code","children":[],"type":"string","jpath":"$.location.country_code","previewValue":""},{"name":"timezone","children":[],"type":"string","jpath":"$.location.timezone","previewValue":""}],"type":"object","jpath":"$.location","previewValue":""},{"name":"source","children":[],"type":"string","jpath":"$.source","previewValue":"API - Generic"},{"name":"tags_count","children":[],"type":"string","jpath":"$.tags_count","previewValue":"0"},{"name":"tags","children":[{"name":"tags_string","children":[],"type":"string","jpath":"$.tags[*]","previewValue":""}],"type":"array.string","jpath":"$.tags[*]","previewValue":""},{"name":"list_id","children":[],"type":"string","jpath":"$.list_id","previewValue":"f45e810936"},{"name":"_links","children":[{"name":"_links_object","children":[{"name":"rel","children":[],"type":"string","jpath":"$._links[*].rel","previewValue":"self"},{"name":"href","children":[],"type":"string","jpath":"$._links[*].href","previewValue":"https://us2.api.mailchimp.com/3.0/lists/f45e810160/members/070549eff249a0169908c59c5be058ed"},{"name":"method","children":[],"type":"string","jpath":"$._links[*].method","previewValue":"GET"},{"name":"targetSchema","children":[],"type":"string","jpath":"$._links[*].targetSchema","previewValue":"https://us2.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"},{"name":"schema","children":[],"type":"string","jpath":"$._links[*].schema","previewValue":""}],"type":"object","jpath":"$._links[*]","previewValue":""}],"type":"array.object","jpath":"$._links[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4a25943dbebd010e96d9fd2ca961906</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f0a25943dbebd010e96d9fd2ca961914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:38:14</sys_updated_on>
+        <value>{&#13;
+	"id": "070549eff249a089908c59c5be090ef",&#13;
+	"email_address": "malcom.reynolds@serenity.com",&#13;
+	"unique_email_id": "296204578b7",&#13;
+	"web_id": 1322838514,&#13;
+	"email_type": "html",&#13;
+	"status": "subscribed",&#13;
+	"merge_fields": {&#13;
+		"FNAME": "Malcolm",&#13;
+		"LNAME": "Reynolds",&#13;
+		"ADDRESS": "",&#13;
+		"PHONE": "",&#13;
+		"BIRTHDAY": ""&#13;
+	},&#13;
+	"stats": {&#13;
+		"avg_open_rate": 0,&#13;
+		"avg_click_rate": 0&#13;
+	},&#13;
+	"ip_signup": "",&#13;
+	"timestamp_signup": "",&#13;
+	"ip_opt": "168.190.1.1",&#13;
+	"timestamp_opt": "2020-10-03T20:28:42+00:00",&#13;
+	"member_rating": 2,&#13;
+	"last_changed": "2020-10-03T20:28:42+00:00",&#13;
+	"language": "",&#13;
+	"vip": false,&#13;
+	"email_client": "",&#13;
+	"location": {&#13;
+		"latitude": 0,&#13;
+		"longitude": 0,&#13;
+		"gmtoff": 0,&#13;
+		"dstoff": 0,&#13;
+		"country_code": "",&#13;
+		"timezone": ""&#13;
+	},&#13;
+	"source": "API - Generic",&#13;
+	"tags_count": 0,&#13;
+	"tags": [],&#13;
+	"list_id": "f45e810936",&#13;
+	"_links": [&#13;
+		{&#13;
+			"rel": "self",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "parent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/CollectionResponse.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Members.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "update",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PATCH",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PATCH.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "upsert",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "PUT",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",&#13;
+			"schema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PUT.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef",&#13;
+			"method": "DELETE"&#13;
+		},&#13;
+		{&#13;
+			"rel": "activity",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/activity",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Activity/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "goals",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/goals",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Goals/Response.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "notes",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/notes",&#13;
+			"method": "GET",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Notes/CollectionResponse.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "events",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/events",&#13;
+			"method": "POST",&#13;
+			"targetSchema": "https://us54.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Events/POST.json"&#13;
+		},&#13;
+		{&#13;
+			"rel": "delete_permanent",&#13;
+			"href": "https://us54.api.mailchimp.com/3.0/lists/f45e810936/members/070549eff249a089908c59c5be090ef/actions/delete-permanent",&#13;
+			"method": "POST"&#13;
+		}&#13;
+	]&#13;
+}</value>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f4a25943dbebd010e96d9fd2ca961906"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>bca25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>38a25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[f6c4e791-70f9-4965-9ce6-f809dc028085].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f4a25943dbebd010e96d9fd2ca961906</id>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>f8a25943dbebd010e96d9fd2ca961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f4a25943dbebd010e96d9fd2ca961906^sys_idNOT IN34a25943dbebd010e96d9fd2ca96190b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD658993e77fe3101060abd38175ac5695,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bf3b6a0a-71a6-4c6a-9fd7-82bd3e29a66a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">f4a25943dbebd010e96d9fd2ca961906</model>
+        <model_id>f4a25943dbebd010e96d9fd2ca961906</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f4a25943dbebd010e96d9fd2ca961906</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>34a25943dbebd010e96d9fd2ca96190b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN198993e7dbe31010e96d9fd2ca96197d,19b8fbfedb67d010e96d9fd2ca961970,3fc75d87dbebd010e96d9fd2ca96197d,59b8fbfedb67d010e96d9fd2ca961976,d58993e7dbe31010e96d9fd2ca96196d,d5b8fbfedb67d010e96d9fd2ca96196a,ddb8fbfedb67d010e96d9fd2ca961989,ffc75d87dbebd010e96d9fd2ca961983"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_type</element>
+        <help/>
+        <hint/>
+        <label>Email type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:28</sys_created_on>
+        <sys_id>198993e7dbe31010e96d9fd2ca96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>last_name</element>
         <help/>
@@ -2607,6 +4665,29 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>skip_merge_validation5</element>
+        <help/>
+        <hint/>
+        <label>Skip merge validation</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:48</sys_created_on>
+        <sys_id>3fc75d87dbebd010e96d9fd2ca96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>email</element>
         <help/>
         <hint/>
@@ -2626,6 +4707,29 @@
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
         <sys_updated_on>2020-10-03 13:59:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+        <sys_id>d58993e7dbe31010e96d9fd2ca96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2675,7 +4779,89 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN9db8fbfedb67d010e96d9fd2ca961987,6aeaff72dba7d010e96d9fd2ca961906"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>vip</element>
+        <help/>
+        <hint/>
+        <label>VIP</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nia.mccash</sys_created_by>
+        <sys_created_on>2020-10-03 20:54:48</sys_created_on>
+        <sys_id>ffc75d87dbebd010e96d9fd2ca961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nia.mccash</sys_updated_by>
+        <sys_updated_on>2020-10-03 20:54:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT IN1d8993e7dbe31010e96d9fd2ca961979,998993e7dbe31010e96d9fd2ca96197a,558993e7dbe31010e96d9fd2ca96197b,9db8fbfedb67d010e96d9fd2ca961987,6aeaff72dba7d010e96d9fd2ca961906,998993e7dbe31010e96d9fd2ca961967,198993e7dbe31010e96d9fd2ca961968,d18993e7dbe31010e96d9fd2ca961969,9d8993e7dbe31010e96d9fd2ca961969,598993e7dbe31010e96d9fd2ca96196a,158993e7dbe31010e96d9fd2ca96196b"/>
+    <sys_choice field="email_type" table="var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>0</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d8993e7dbe31010e96d9fd2ca961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HTML</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>998993e7dbe31010e96d9fd2ca96197a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+            <value>html</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>email_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plain-text</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>2</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>558993e7dbe31010e96d9fd2ca96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:28</sys_updated_on>
+            <value>text</value>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="list_id" table="var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2716,19 +4902,135 @@
             <value>f45e810160</value>
         </sys_choice>
     </sys_choice>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INf2eaff72dba7d010e96d9fd2ca961949"/>
+    <sys_choice field="status" table="var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>0</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>998993e7dbe31010e96d9fd2ca961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Subscribed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>1</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>198993e7dbe31010e96d9fd2ca961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value>subscribed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unsubscribed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>2</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d18993e7dbe31010e96d9fd2ca961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value>unsubscribed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cleaned</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>3</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d8993e7dbe31010e96d9fd2ca961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value>cleaned</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>4</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>598993e7dbe31010e96d9fd2ca96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value>pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transactional</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_15b8fbfedb67d010e96d9fd2ca961964</name>
+            <sequence>5</sequence>
+            <sys_created_by>nia.mccash</sys_created_by>
+            <sys_created_on>2020-10-05 19:38:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>158993e7dbe31010e96d9fd2ca96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nia.mccash</sys_updated_by>
+            <sys_updated_on>2020-10-05 19:38:27</sys_updated_on>
+            <value>transactional</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_15b8fbfedb67d010e96d9fd2ca961964^sys_idNOT INbca25943dbebd010e96d9fd2ca96191d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>status_code</element>
+        <element>contact_details</element>
         <help/>
         <hint/>
-        <label>Status code</label>
+        <label>Contact details</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_15b8fbfedb67d010e96d9fd2ca961964</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>nia.mccash</sys_created_by>
-        <sys_created_on>2020-10-03 14:08:56</sys_created_on>
-        <sys_id>f2eaff72dba7d010e96d9fd2ca961949</sys_id>
+        <sys_created_on>2020-10-03 20:32:12</sys_created_on>
+        <sys_id>bca25943dbebd010e96d9fd2ca96191d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Mailchimp Spoke" source="x_23746_mailchimp">3a2e64b2dbab9010e96d9fd2ca96194e</sys_package>
@@ -2736,7 +5038,7 @@
         <sys_scope display_value="Mailchimp Spoke">3a2e64b2dbab9010e96d9fd2ca96194e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nia.mccash</sys_updated_by>
-        <sys_updated_on>2020-10-03 14:08:56</sys_updated_on>
+        <sys_updated_on>2020-10-03 20:32:12</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
